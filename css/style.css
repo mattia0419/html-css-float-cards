@@ -2,9 +2,32 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.debug{
+    border: black dashed;
+}
+
 .container{
     max-width: 1000px;
     padding: 0 20px;
     margin: 0 auto;
-    border: dashed black;
+}
+
+.row{
+    padding: 0 -20px;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+.col{
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 20px;
+    margin-bottom: 70px;
+
+
 }
